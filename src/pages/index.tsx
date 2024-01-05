@@ -33,7 +33,7 @@ export default function Home() {
       <main className="w-full mt-5 md:mt-10 px-5 md:px-16 bg-veryLightGray dark:bg-very-dark">
         <div className=" py-12 flex flex-wrap md:justify-between items-center">
           <SearchBar onSearch={handleSearch} />
-          <div className="bg-white dark:bg-default px-10 py-4 rounded-md text-light text-center mt-8 md:mt-0">
+          <div className="bg-white dark:bg-default w-full md:w-auto px-8 py-2 rounded-md text-light text-center md:mt-0">
             <select
               className="outline-none cursor-pointer p-2 text-lg text-primary dark:text-white dark:bg-default"
               name="Filter by region"
@@ -42,7 +42,6 @@ export default function Home() {
             >
               <option value="">Filter by region</option>
               <option value="Africa">Africa</option>
-              {/* <option value="America">America</option> */}
               <option value="Asia">Asia</option>
               <option value="Europe">Europe</option>
               <option value="Oceania">Oceania</option>
